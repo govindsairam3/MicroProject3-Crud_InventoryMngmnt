@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gmart</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body class=>
+        
+        <div class="jumbotron text-center ">
+            <h1 class="c1 c3">Gmart Fashion kart</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <nav class="navbar bg-dark navbar-dark c1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link navbar-dark" href="/createProd">Add Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/updateProd">Update Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/deleteProd">Delete Product</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        
+            <div class="col-sm-9">
+                <h2 class="c1">Welcome</h2>
+                
+
+                
+                    <table>
+                        <tr>
+                            <th>Product Id</th>
+                            <th>Category</th>
+                            <th>StockAvailable</th>
+                            <th>Price</th>
+                        </tr>
+                        <% for(var i=0;i<data.length;i++){ %>
+                            <tr>
+                                <td><%= data[i].pid %></td>
+                                <td><%= data[i].category %></td>
+                                <td><%= data[i].quantity %></td>
+                                <td><%= data[i].sp %></td>
+                            </tr>
+                        <% } %>
+                    </table>
+                  
+            </div>
+        </div>
+</div>
+        <footer class="c1 footer" >Gmart @2021</footer>
+    </body>
+</html>
