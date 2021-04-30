@@ -1,49 +1,5 @@
-.c1{
-    text-align: center;
-}
-
 .c2{
-    color: white;
-}
-
-.c3{
-    color:yellow;
-    background-color: black;
-}
- 
-table,th,td{
-    border:1 px solid black;
-    border-collapse:none;
-}
-
-th,td{
-    padding: 15px;
-    text-align: left;
-}
-
-th{
-    background-color: rgb(15, 15, 29);
-    color: white;
-}
-
-tr:nth-child(even){
-    background-color: #eee;
-}
-
-tr:nth-child(odd){
-    background-color: #fff;
-}
-
-
-.footer{
-    position:fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color:black;
-  text-align: center;
-}
-
-.bd{
-
+    color:white;
+    text-align: center;
+    background-color: blueviolet;
 }
